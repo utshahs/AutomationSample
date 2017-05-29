@@ -11,6 +11,7 @@ public class LinkTest {
 		System.setProperty("webdriver.gecko.driver", "driver/geckodriver.exe");
 		driver = new FirefoxDriver();
 		String baseUrl = ("http://toolsqa.com/automation-practice-form/");
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.get(baseUrl);
 		driver.findElement(By.linkText("Link Test")).click();
 		
