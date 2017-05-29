@@ -10,7 +10,7 @@ public class PartialLinkTest {
 
 	public static void main(String[] args) {
 		WebDriver driver;
-		System.setProperty("webdriver.gecko.driver", "D:\\New Folder\\geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "driver/geckodriver.exe");
 		driver = new FirefoxDriver();
 		String baseUrl = ("http://toolsqa.com/automation-practice-form/");
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
